@@ -1,16 +1,26 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python
 __pycache__/
 *.py[cod]
-.venv/
-venv/
 
-logs/
-
-data/vector_db/
+# Generated data
 data/catalog/
+data/vector_db/
 data/extracted_text/
 data/ocr_copies/
+data/cache/
+data/summaries/
 
-.idea/
+# Logs
+logs/
+*.log
+
+# IDE
 .vscode/
+.idea/
 
+# OS
 .DS_Store

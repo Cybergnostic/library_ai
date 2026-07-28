@@ -1,0 +1,46 @@
+roots:
+  - id: downloads_books
+    path: "/home/cyber/Downloads/books"
+    recursive: true
+
+  - id: home_loose_books
+    path: "/home/cyber"
+    recursive: false
+
+  - id: astrology_ebooks
+    path: "/mnt/storage/SAVED/Astrology ebooks"
+    recursive: true
+
+  - id: saved_books
+    path: "/mnt/storage/SAVED/Knjige"
+    recursive: true
+
+scan:
+  follow_symlinks: false
+  include_hidden: false
+
+extensions:
+  - .pdf
+  - .epub
+  - .mobi
+  - .azw
+  - .azw3
+  - .djvu
+  - .fb2
+  - .docx
+  - .odt
+  - .rtf
+  - .txt
+  - .md
+
+metadata_rules:
+  - id: bojan_sojic_astrology_lessons
+    description: "Authorship of astrology lectures and lesson transcripts"
+    match:
+      topic: astrology
+      document_types:
+        - lecture_notes
+        - lesson_transcript
+    set:
+      authors:
+        - "Bojan Šojić"

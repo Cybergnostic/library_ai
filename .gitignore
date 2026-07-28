@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+logs/
+
+data/vector_db/
+data/catalog/
+data/extracted_text/
+data/ocr_copies/
+
+.idea/
+.vscode/
+
+.DS_Store
